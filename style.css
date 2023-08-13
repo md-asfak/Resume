@@ -199,7 +199,7 @@ i {
 input {
     padding: .5rem;
     width: 15.625rem;
-    color: var(--text2-color);
+    color: white;
     background-color: var(--secondary-color);
     border: none;
     margin: .3125rem 0;
