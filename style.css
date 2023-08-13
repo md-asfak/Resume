@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-weight: 400;
+  
+}
+
+:root {
+
+    --primary-color:#e6222f;
+    --secondary-color:rgb(41,44,62);
+    --text-color:#ffffff;
+    --text1-color:#e6222f;
+    --text2-color:#000000;
+    
+   
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(34,36,56);
+}
+
+h1 {
+    font-size:48px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.375rem;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+a {
+     font-size: .9375rem;
+     color: var(--text-color);
+     font-weight: 400;
+}
+
+h5 {
+    font-size: 1rem;
+    color: var(--text2-color);
+    font-weight: 300;
+}
+
+h6 {
+    font-size: .875rem ;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+p {
+    font-size: .75rem;
+    color: var(--text-color);
+}
+
+span {
+    color: var(--primary-color);
+}
+
+.container {
+    margin: 1.875rem 5rem;
+}
+
+button{
+    background-color: var(--primary-color);
+    padding: .625rem .9375rem;
+    border: none;
+    
+}
+/*//////////////////////////////// 
+//////////  menu ber ////////////
+///////////////////////////////*/
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.bar_icon {
+    display: none;
+}
+.menu a {
+    margin-left: .625rem;
+}
+
+
+/* ////////////////////////
+////////// hero ////////
+//////////////////////// */
+
+.hero {
+    margin-top: 5rem;
+    display: flex;
+    
+}
+
+.hero_sec {
+    width: 50%;
+    padding: 0 ;
+}
+
+.hero p {
+    padding: .625rem 0;
+    text-align: justify;
+}
+
+.hero button {
+    color: white;
+}
+
+.hero_img img {
+width: 300px;
+height: 300px;
+border-radius: 50%;
+margin-left: 3.125rem;
+
+}
+
+.hero_img_1 img{
+display: none;
+}
+
+
+/*//////////////////////////////// 
+//////////  service section ////////////
+///////////////////////////////*/
+
+.service {
+    margin-top:5rem;
+}
+
+.border {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.main_service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service_top {
+    display: flex;
+    justify-content: space-between;
+    padding: .625rem 0;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    padding: .625rem 1.25rem;
+    margin-right: 3.125rem;
+}
+
+i {
+    color: var(--primary-color);
+    font-size: 1.5625rem;
+    margin-bottom: .625rem;
+}
+
+.card h6 {
+    margin-bottom: .625rem;
+}
+
+/*//////////////////////////////// 
+//////////  connect section ////////////
+///////////////////////////////*/
+
+
+.Connect {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 5rem;
+}
+
+input {
+    padding: .5rem;
+    width: 15.625rem;
+    color: var(--text2-color);
+    background-color: var(--secondary-color);
+    border: none;
+    margin: .3125rem 0;
+}
+
+.Connect  button {
+    color: var(--text-color);
+    border-radius: .3125rem;
+   
+    margin-top: .625rem;
+}
+
+/*//////////////////////////////// 
+//////////  Responsip ////////////
+///////////////////////////////*/
+
+
+@media (max-width:48rem) {
+
+    h1 {
+        font-size: 1.5625rem;
+        
+    }
+
+    /* nav */
+    .container {
+        margin: .625rem .9375rem;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bar_icon {
+        display:block;
+        font-size: .3125rem;
+    }
+    .bar_icon i {
+        font-size: 1.25rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /* hero */
+    .hero {
+
+        margin-top: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.125rem;
+        
+    }
+
+    .hero_sec {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hero_img_1 img {
+        display: block;
+        width: 12.5rem;
+        height: 12.5rem;
+        border-radius: 50%;
+       
+    }
+
+    .hero_img_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero_img img {
+      display: none;
+       
+    }
+
+    /* service section */
+
+
+    .service {
+        margin-top: 1.25rem;
+    }
+    .service_top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       
+    }
+
+    .card {
+        margin: .625rem 0 0 0;
+      padding: .3125rem .5rem;
+      width:100%;
+    }
+    .service{
+        width: 100%;
+    }
+
+    .main_service {
+        margin-top: .625rem ;
+        width: 100%;
+    }
+
+    /* contact */
+    input {
+        
+        width: 100%;
+    }
+
+    .Connect  button {
+       margin: 10px 0 0 0;
+    }
+}
